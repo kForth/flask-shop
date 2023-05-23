@@ -40,10 +40,10 @@ a.btn {
   }
 
   &.secondary {
-    border: 1px solid $light-turquoise;
+    border: 1px solid $logo-blue;
     padding: $global-padding $global-padding * 2;
     background-color: $white;
-    color: $light-turquoise;
+    color: $logo-blue;
 
     &:hover {
       border-color: #42beab;

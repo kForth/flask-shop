@@ -5,12 +5,12 @@ from pathlib import Path
 
 
 class DBConfig:
-    db_type = os.getenv("DB_TYPE", "mysql")
-    user = os.getenv("DB_USER", "root")
-    passwd = os.getenv("DB_PASSWD", "123456")
-    host = os.getenv("DB_HOST", "127.0.0.1")
-    port = os.getenv("DB_PORT", 3306)
-    db_name = os.getenv("DB_NAME", "flaskshop")
+    db_type = os.getenv("FLASK_SHOP_DB_TYPE", "mysql")
+    user = os.getenv("FLASK_SHOP_DB_USER", "root")
+    passwd = os.getenv("FLASK_SHOP_DB_PASSWD", "123456")
+    host = os.getenv("FLASK_SHOP_DB_HOST", "127.0.0.1")
+    port = os.getenv("FLASK_SHOP_DB_PORT", 3306)
+    db_name = os.getenv("FLASK_SHOP_DB_NAME", "flaskshop")
     if db_type == "postgresql":
         db_uri = f"postgresql://{user}:{passwd}@{host}:{port}/{db_name}"
     elif db_type == "mysql":

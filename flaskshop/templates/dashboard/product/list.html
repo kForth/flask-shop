@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="card-body table-responsive p-3">
-                            <table class="table table-hover align-middle">
+                            <table class="table table-hover align-middle list">
                                 <thead>
                                 <tr>
                                     {% for th in props.values() %}
@@ -76,6 +76,13 @@
                                         <td>
                                             <a href="{{ url_for('dashboard.product_detail', id=item.id) }}"
                                                class="btn btn-info btn-sm">{% trans %}View{% endtrans %}</a>
+                                            <a href="{{ url_for('dashboard.product_manage', id=item.id) }}"
+                                                class="btn btn-warning btn-sm">{% trans %}Edit{% endtrans %}</a>
+                                            <a class="btn btn-danger btn-sm"
+                                                data-delete-url="products/{{ item.id }}/delete"
+                                                data-redirect-url="/dashboard/products"
+                                                data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                            >{% trans %}Delete{% endtrans %}</a>
                                         </td>
                                     </tr>
                                 {% endfor %}

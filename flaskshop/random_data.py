@@ -327,10 +327,10 @@ def set_product_attributes(product, product_type):
 # step9
 def create_product_images(product, how_many, placeholder_dir):
     placeholder_root = Config.STATIC_DIR / placeholder_dir
-    for dummy in range(how_many):
-        image_name = random.choice(list(placeholder_root.iterdir()))
-        image = image_name.relative_to(Config.STATIC_DIR).as_posix()
-        ProductImage.get_or_create(image=image, product_id=product.id)
+    # for dummy in range(how_many):
+    #     image_name = random.choice(list(placeholder_root.iterdir()))
+    #     image = image_name.relative_to(Config.STATIC_DIR).as_posix()
+    #     ProductImage.get_or_create(image=image, product_id=product.id)
 
 
 # step10

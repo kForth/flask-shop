@@ -20,7 +20,7 @@ input {
 
   &[type="checkbox"] {
     -webkit-appearance: none;
-    border-color: $turquoise;
+    border-color: $logo-blue;
     border-radius: 2px;
     cursor: pointer;
     height: 8px;
@@ -28,13 +28,13 @@ input {
     width: 8px;
 
     &:checked {
-      background-color: $turquoise;
+      background-color: $logo-blue;
     }
   }
 
   &[type="radio"] {
     -webkit-appearance: none;
-    border-color: $turquoise;
+    border-color: $logo-blue;
     border-radius: 2px;
     cursor: pointer;
     height: 8px;
@@ -42,7 +42,7 @@ input {
     width: 8px;
 
     &:checked {
-      background-color: $turquoise;
+      background-color: $logo-blue;
     }
   }
 }
@@ -211,7 +211,7 @@ input#id_quantity {
   input {
     -webkit-appearance: none;
     cursor: pointer;
-    border: 1px solid $turquoise;
+    border: 1px solid $logo-blue;
     display: inline-block;
     height: 14px;
     margin: $global-margin * 0.25 $global-margin * 0.5 0 0;
@@ -221,7 +221,7 @@ input#id_quantity {
 
     &:checked {
       &:after {
-        background: $turquoise;
+        background: $logo-blue;
         border-radius: 100%;
         content: "";
         height: 8px;

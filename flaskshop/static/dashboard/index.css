@@ -97,19 +97,21 @@ label {
 }
 
 .brand-link {
-    display: block;
+    display: flex; /* block; */
     font-size: 1.25rem;
     line-height: 1.5;
-    padding: .8125rem .5rem;
+    /* padding: .8125rem .5rem; */
     border-bottom: 1px solid #4b545c;
     height: 64px;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand-link .brand-image {
-    float: left;
+    /* float: left; */
     line-height: .8;
-    margin-left: .8rem;
-    margin-right: .5rem;
+    /* margin-left: .8rem; */
+    /* margin-right: .5rem; */
     margin-top: -3px;
     max-height: 33px;
     width: auto;
