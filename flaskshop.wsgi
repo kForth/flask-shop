@@ -10,4 +10,4 @@ with open(activate_this) as file_:
 
 from flaskshop.app import create_app
 
-app = create_app()
+application = create_app()
