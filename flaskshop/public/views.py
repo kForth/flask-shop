@@ -24,10 +24,6 @@ def home():
     return render_template("public/home.html", products=products)
 
 
-def style():
-    return render_template("public/style_guide.html")
-
-
 def favicon():
     return send_from_directory("static", "favicon-32x32.png")
 
@@ -58,7 +54,6 @@ def show_page(identity):
 def flaskshop_load_blueprints(app):
     bp = Blueprint("public", __name__)
     bp.add_url_rule("/", view_func=home)
-    bp.add_url_rule("/style", view_func=style)
     bp.add_url_rule("/favicon.ico", view_func=favicon)
     bp.add_url_rule("/search", view_func=search)
     bp.add_url_rule("/page/<identity>", view_func=show_page)

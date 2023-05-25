@@ -257,7 +257,6 @@ msgstr "Заглавие"
 #: flaskshop/templates/dashboard/index.html:105
 #: flaskshop/templates/orders/details.html:22
 #: flaskshop/templates/orders/details.html:35
-#: flaskshop/templates/public/style_guide.html:714
 msgid "Order"
 msgstr "Поръчки"
 
@@ -465,7 +464,6 @@ msgstr "Промени цена"
 #: flaskshop/dashboard/forms.py:158 flaskshop/templates/checkout/cart.html:26
 #: flaskshop/templates/dashboard/product/detail.html:97
 #: flaskshop/templates/orders/_ordered_items_table.html:12
-#: flaskshop/templates/public/style_guide.html:573
 msgid "Quantity"
 msgstr "Количество"
 
@@ -569,7 +567,6 @@ msgstr "ваучери"
 #: flaskshop/dashboard/views/discount.py:75
 #: flaskshop/templates/dashboard/discount/sale.html:14
 #: flaskshop/templates/products/_items.html:14
-#: flaskshop/templates/public/style_guide.html:841
 msgid "Sale"
 msgstr "Разпродажба"
 
@@ -586,7 +583,6 @@ msgstr "Идентификация"
 #: flaskshop/templates/dashboard/order/detail.html:22
 #: flaskshop/templates/dashboard/order/list.html:16
 #: flaskshop/templates/dashboard/user/detail.html:81
-#: flaskshop/templates/public/style_guide.html:723
 msgid "Status"
 msgstr "Статус"
 
@@ -754,12 +750,10 @@ msgid "Log out"
 msgstr "Излез"
 
 #: flaskshop/templates/account/address_edit.html:14
-#: flaskshop/templates/public/style_guide.html:612
 msgid "Your profile"
 msgstr "Вашия профил"
 
 #: flaskshop/templates/account/address_edit.html:30
-#: flaskshop/templates/public/style_guide.html:617
 msgid "Edit address"
 msgstr "Редактирай адрес"
 
@@ -784,34 +778,27 @@ msgid "My account"
 msgstr "Профили"
 
 #: flaskshop/templates/account/details.html:23
-#: flaskshop/templates/public/style_guide.html:668
 msgid "Recent Orders"
 msgstr "Последни поръчки"
 
 #: flaskshop/templates/account/details.html:29
 #: flaskshop/templates/account/details.html:107
-#: flaskshop/templates/public/style_guide.html:673
 msgid "Change password"
 msgstr "Промени парола"
 
 #: flaskshop/templates/account/details.html:35
-#: flaskshop/templates/public/style_guide.html:678
 msgid "Addresses book"
 msgstr "Адреси"
 
 #: flaskshop/templates/account/details.html:50
-#: flaskshop/templates/public/style_guide.html:717
 msgid "Date"
 msgstr "Дата"
 
 #: flaskshop/templates/account/details.html:53
-#: flaskshop/templates/public/style_guide.html:720
 msgid "Summary"
 msgstr "Общо"
 
 #: flaskshop/templates/account/details.html:80
-#: flaskshop/templates/public/style_guide.html:744
-#: flaskshop/templates/public/style_guide.html:765
 msgid "Details"
 msgstr "Детайли"
 
@@ -835,17 +822,14 @@ msgstr "Потребителя няма поръчки."
 #: flaskshop/templates/dashboard/site/site_page.html:14
 #: flaskshop/templates/dashboard/user/detail.html:31
 #: flaskshop/templates/dashboard/user/detail.html:67
-#: flaskshop/templates/public/style_guide.html:791
 msgid "Edit"
 msgstr "Редактирай"
 
 #: flaskshop/templates/account/details.html:135
-#: flaskshop/templates/public/style_guide.html:802
 msgid "Remove Address"
 msgstr "Премахни адрес"
 
 #: flaskshop/templates/account/details.html:138
-#: flaskshop/templates/public/style_guide.html:805
 msgid "Cancel"
 msgstr "Отказ"
 
@@ -1375,7 +1359,6 @@ msgid "unavailable"
 msgstr "недостъпен"
 
 #: flaskshop/templates/products/product_list_base.html:45
-#: flaskshop/templates/public/style_guide.html:417
 msgid "Filters"
 msgstr "Филтри"
 
@@ -1444,454 +1427,6 @@ msgstr "Търси резултати"
 #: flaskshop/templates/public/search_result.html:21
 msgid "Search"
 msgstr "Търсене"
-
-#: flaskshop/templates/public/style_guide.html:13
-msgid "Style guide"
-msgstr "Ръководство за стил"
-
-#: flaskshop/templates/public/style_guide.html:23
-#: flaskshop/templates/public/style_guide.html:45
-msgid "Typography"
-msgstr "Типография"
-
-#: flaskshop/templates/public/style_guide.html:24
-#: flaskshop/templates/public/style_guide.html:80
-msgid "Colors"
-msgstr "Цветове"
-
-#: flaskshop/templates/public/style_guide.html:25
-msgid "Grid"
-msgstr "Решетка"
-
-#: flaskshop/templates/public/style_guide.html:26
-#: flaskshop/templates/public/style_guide.html:198
-msgid "Responsive breakpoints"
-msgstr "Реагиращи точки на прекъсване"
-
-#: flaskshop/templates/public/style_guide.html:27
-msgid "Helper classes"
-msgstr "Помощни класове"
-
-#: flaskshop/templates/public/style_guide.html:28
-#: flaskshop/templates/public/style_guide.html:334
-msgid "Icons"
-msgstr "Икони"
-
-#: flaskshop/templates/public/style_guide.html:29
-msgid "Buttons"
-msgstr "Бутони"
-
-#: flaskshop/templates/public/style_guide.html:30
-#: flaskshop/templates/public/style_guide.html:395
-msgid "Forms"
-msgstr "Форми"
-
-#: flaskshop/templates/public/style_guide.html:31
-#: flaskshop/templates/public/style_guide.html:588
-msgid "Pagination"
-msgstr "№ Страница"
-
-#: flaskshop/templates/public/style_guide.html:32
-msgid "Breadcrumbs"
-msgstr "Трохи"
-
-#: flaskshop/templates/public/style_guide.html:33
-#: flaskshop/templates/public/style_guide.html:624
-msgid "Notifications"
-msgstr "Известия"
-
-#: flaskshop/templates/public/style_guide.html:34
-#: flaskshop/templates/public/style_guide.html:644
-msgid "Main navigation"
-msgstr "Основна навигация"
-
-#: flaskshop/templates/public/style_guide.html:35
-msgid "Tabs"
-msgstr "Табове"
-
-#: flaskshop/templates/public/style_guide.html:36
-msgid "Tables"
-msgstr "Таблици"
-
-#: flaskshop/templates/public/style_guide.html:37
-msgid "Cards"
-msgstr "Карти"
-
-#: flaskshop/templates/public/style_guide.html:38
-msgid "Product items"
-msgstr "Продуктови артикули"
-
-#: flaskshop/templates/public/style_guide.html:39
-#: flaskshop/templates/public/style_guide.html:852
-msgid "Product gallery"
-msgstr "Галерия с продукти"
-
-#: flaskshop/templates/public/style_guide.html:47
-msgid "We use Lato fontface in Regular(400),"
-msgstr "Използваме шрифт Lato Regular(400),"
-
-#: flaskshop/templates/public/style_guide.html:48
-msgid "and"
-msgstr "и"
-
-#: flaskshop/templates/public/style_guide.html:48
-msgid "Bold(700)"
-msgstr "Удебелен(700)"
-
-#: flaskshop/templates/public/style_guide.html:48
-msgid "weights"
-msgstr "ширина"
-
-#: flaskshop/templates/public/style_guide.html:49
-msgid ""
-"Lato includes only latin and latin extended characters. For other alphabets the default sans serif font\n"
-"              will be used."
-msgstr ""
-"Lato включва само латински и латински разширени знаци. За други азбуки шрифтът без засечки по подразбиране\n"
-"               ще бъде използван."
-
-#: flaskshop/templates/public/style_guide.html:52
-#: flaskshop/templates/public/style_guide.html:708
-#: flaskshop/templates/public/style_guide.html:775
-#: flaskshop/templates/public/style_guide.html:817
-msgid "Click and edit any text below to see how the component looks with different text"
-msgstr "Щракнете и редактирайте всеки текст по-долу, за да видите как изглежда компонентът с различен текст"
-
-#: flaskshop/templates/public/style_guide.html:53
-msgid "Headers"
-msgstr "Заглавия"
-
-#: flaskshop/templates/public/style_guide.html:57
-msgid "H1 example text"
-msgstr "H1 примерен текст"
-
-#: flaskshop/templates/public/style_guide.html:58
-msgid "H2 example text"
-msgstr "H2 примерен текст"
-
-#: flaskshop/templates/public/style_guide.html:59
-msgid "H3 example text (always uppercased)"
-msgstr "H3 примерен текст (ВИНАГИ С ГЛАВНИ БУКВИ)"
-
-#: flaskshop/templates/public/style_guide.html:62
-msgid "Paragraph"
-msgstr "Параграф"
-
-#: flaskshop/templates/public/style_guide.html:65
-msgid ""
-"Saleor is open and free to use. It is not a bait to force you to pay us later and\n"
-"              we promise to do our bests to fix bugs and improve the code. Some situations however call for a custom\n"
-"              solution and extra code to be written. Whether you need us to cover an exotic use case or build you a\n"
-"              custom e-commerce appliance, our team can help."
-msgstr ""
-"Saleor е отворен и безплатен за използване. Не е стръв, за да ви принудим да ни платите по-късно и\n"
-"обещаваме да направим всичко възможно, за да коригираме грешки и да подобрим кода. Някои ситуации обаче изискват необичайни\n"
-" решение и допълнителен код за писане. Независимо дали имате нужда от нас, за да покрием екзотичен сайт или да  ви изградим\n"
-"персонализиран електронен магазин, нашият екип може да помогне."
-
-#: flaskshop/templates/public/style_guide.html:71
-msgid "Links"
-msgstr "Връзки"
-
-#: flaskshop/templates/public/style_guide.html:74
-msgid "Link example text"
-msgstr "Примерен текст за връзка"
-
-#: flaskshop/templates/public/style_guide.html:75
-msgid "Styled link example text"
-msgstr "Примерен стил на връзка"
-
-#: flaskshop/templates/public/style_guide.html:154
-msgid "We use"
-msgstr "Използваме"
-
-#: flaskshop/templates/public/style_guide.html:155
-msgid "responsive grid which is based on a 12 column layout. In most cases we use following combinations"
-msgstr "адаптивна мрежа, която се основава на оформление от 12 колони. В повечето случаи използваме следните комбинации"
-
-#: flaskshop/templates/public/style_guide.html:206
-msgid "Max container width"
-msgstr "Максимална ширина на контейнера"
-
-#: flaskshop/templates/public/style_guide.html:209
-msgid "Class prefix"
-msgstr "Префикс на класа"
-
-#: flaskshop/templates/public/style_guide.html:216
-msgid "Extra small"
-msgstr "Много малко"
-
-#: flaskshop/templates/public/style_guide.html:219
-msgid "None (auto)"
-msgstr "None (автоматично)"
-
-#: flaskshop/templates/public/style_guide.html:229
-msgid "Small"
-msgstr "Малко"
-
-#: flaskshop/templates/public/style_guide.html:242
-msgid "Medium"
-msgstr "Средно"
-
-#: flaskshop/templates/public/style_guide.html:255
-msgid "Large"
-msgstr "Голямо"
-
-#: flaskshop/templates/public/style_guide.html:268
-msgid "Extra large"
-msgstr "Много голямо"
-
-#: flaskshop/templates/public/style_guide.html:283
-msgid "Storefront templates built with"
-msgstr "Шаблони за магазина, създадени с"
-
-#: flaskshop/templates/public/style_guide.html:285
-msgid "framework wich has handful utility classes"
-msgstr "рамка, която има няколко полезни класа"
-
-#: flaskshop/templates/public/style_guide.html:286
-msgid "Responsive floats"
-msgstr "Отзиви"
-
-#: flaskshop/templates/public/style_guide.html:291
-msgid "Float left on all viewport sizes"
-msgstr "Премести в ляво за всички размери"
-
-#: flaskshop/templates/public/style_guide.html:297
-msgid "Float right on all viewport sizes"
-msgstr "Премести в дясно за всички размери"
-
-#: flaskshop/templates/public/style_guide.html:303
-msgid "Don't float on all viewport sizes"
-msgstr "Не променяй във всички размери"
-
-#: flaskshop/templates/public/style_guide.html:309
-msgid "Float left on viewports sized SM (small) or wider"
-msgstr "Плуване вляво върху екрани с размер SM (малък) или по-широк"
-
-#: flaskshop/templates/public/style_guide.html:315
-msgid "Float right on viewports sized MD (medium) or wider"
-msgstr "Плава вдясно върху прозорци с размер MD (среден) или по-широк"
-
-#: flaskshop/templates/public/style_guide.html:321
-msgid "Responsive utilities"
-msgstr "Отзивчиви помощни програми"
-
-#: flaskshop/templates/public/style_guide.html:324
-msgid ""
-"The <code>.hidden-*-up</code> classes hide the element when the viewport is at the given breakpoint or\n"
-"              wider. For example, <code>.hidden-md-up</code> hides an element on medium, large, and extra-large\n"
-"              viewports."
-msgstr ""
-"Класовете <code>.hidden-*-up</code> скриват елемента, когато изгледът е в дадена точка на прекъсване или\n"
-"               по-широк. Например <code>.hidden-md-up</code> скрива елемент на среден, голям и изключително голям\n"
-"               изгледи."
-
-#: flaskshop/templates/public/style_guide.html:327
-msgid ""
-"The <code>.hidden-*-down</code> classes hide the element when the viewport is at the given breakpoint or\n"
-"              smaller. For example, <code>.hidden-md-down</code> hides an element on extra-small, small, and medium\n"
-"              viewports."
-msgstr ""
-"Класовете <code>.hidden-*-down</code> скриват елемента, когато изгледът е в дадена точка на прекъсване или\n"
-"               по-малък. Например <code>.hidden-md-down</code> скрива елемент на изключително малък, малък и среден\n"
-"               изгледи."
-
-#: flaskshop/templates/public/style_guide.html:351
-msgid "Click and edit any button below to see how the component looks with different text"
-msgstr "Щракнете и редактирайте който и да е бутон по-долу, за да видите как изглежда компонентът с различен текст"
-
-
-#: flaskshop/templates/public/style_guide.html:355
-msgid "Primary Button (buttons can be really very wide)"
-msgstr "Основен бутон (бутоните могат да бъдат наистина много широки)"
-
-#: flaskshop/templates/public/style_guide.html:358
-msgid "Secondary Button"
-msgstr "Вторичен бутон"
-
-#: flaskshop/templates/public/style_guide.html:361
-msgid "Danger Button"
-msgstr "Бутон за опасност"
-
-#: flaskshop/templates/public/style_guide.html:364
-msgid "Disabled Button"
-msgstr "Деактивиран бутон"
-
-#: flaskshop/templates/public/style_guide.html:367
-msgid "Gray Button"
-msgstr "Сив бутон"
-
-#: flaskshop/templates/public/style_guide.html:370
-msgid "Primary Narrow Button"
-msgstr "Основен тесен бутон"
-
-#: flaskshop/templates/public/style_guide.html:373
-msgid "Secondary Narrow Button"
-msgstr "Вторичен тесен бутон"
-
-#: flaskshop/templates/public/style_guide.html:376
-msgid "Danger Narrow Button"
-msgstr "Опасно тесен бутон"
-
-#: flaskshop/templates/public/style_guide.html:384
-msgid "Home page button"
-msgstr "Бутон за начална страница"
-
-#: flaskshop/templates/public/style_guide.html:396
-msgid "Text form"
-msgstr "Форма за текст"
-
-#: flaskshop/templates/public/style_guide.html:402
-msgid "Given name"
-msgstr "Собствено име"
-
-#: flaskshop/templates/public/style_guide.html:409
-msgid "Family name"
-msgstr "Фамилия"
-
-#: flaskshop/templates/public/style_guide.html:424
-msgid "Box Size"
-msgstr "Размер на кутията"
-
-#: flaskshop/templates/public/style_guide.html:431
-#: flaskshop/templates/public/style_guide.html:527
-msgid "100g"
-msgstr "100г"
-
-#: flaskshop/templates/public/style_guide.html:433
-#: flaskshop/templates/public/style_guide.html:530
-msgid "250g"
-msgstr "250г"
-
-#: flaskshop/templates/public/style_guide.html:435
-msgid "500g"
-msgstr "500г"
-
-#: flaskshop/templates/public/style_guide.html:436
-msgid "Feel free to place here as long option as you want"
-msgstr "Чувствайте се свободни да поставите тук толкова дълга опция, колкото искате"
-
-#: flaskshop/templates/public/style_guide.html:445
-msgid "Select"
-msgstr "Избери"
-
-#: flaskshop/templates/public/style_guide.html:452
-#: flaskshop/templates/public/style_guide.html:453
-#: flaskshop/templates/public/style_guide.html:454
-#: flaskshop/templates/public/style_guide.html:455
-msgid "Option"
-msgstr "Опция"
-
-#: flaskshop/templates/public/style_guide.html:462
-msgid "Number input"
-msgstr "Въвеждане на число"
-
-#: flaskshop/templates/public/style_guide.html:476
-msgid "Radio buttons"
-msgstr "Радио бутони"
-
-#: flaskshop/templates/public/style_guide.html:484
-#: flaskshop/templates/public/style_guide.html:559
-msgid "First option"
-msgstr "Първи вариант"
-
-#: flaskshop/templates/public/style_guide.html:490
-#: flaskshop/templates/public/style_guide.html:533
-#: flaskshop/templates/public/style_guide.html:565
-msgid "Feel free to place here as long text as you want"
-msgstr "Чувствайте се свободни да поставите тук толкова дълъг текст, колкото искате"
-
-#: flaskshop/templates/public/style_guide.html:497
-msgid "Input groups"
-msgstr "Входни групи"
-
-#: flaskshop/templates/public/style_guide.html:516
-msgid "Use"
-msgstr "Използвай"
-
-#: flaskshop/templates/public/style_guide.html:522
-msgid "Variant picker"
-msgstr "Избор на варианти"
-
-#: flaskshop/templates/public/style_guide.html:537
-msgid "Errors"
-msgstr "Грешки"
-
-#: flaskshop/templates/public/style_guide.html:538
-msgid "Errors are always displayed as a small red text below the form explaining what cause the error."
-msgstr "Грешките винаги се показват като малък червен текст под формуляра, обясняващ причината за грешката."
-
-
-#: flaskshop/templates/public/style_guide.html:548
-#: flaskshop/templates/public/style_guide.html:569
-msgid "This field is required"
-msgstr "Това поле е задължително"
-
-#: flaskshop/templates/public/style_guide.html:555
-msgid "Radio form"
-msgstr "Форма за опция"
-
-#: flaskshop/templates/public/style_guide.html:580
-msgid "Only 32 remaining in stock"
-msgstr "Остават само 32 броя на склад"
-
-#: flaskshop/templates/public/style_guide.html:589
-#: flaskshop/templates/public/style_guide.html:602
-#: flaskshop/templates/public/style_guide.html:625
-#: flaskshop/templates/public/style_guide.html:645
-msgid "Click and edit any item below to see how the component looks with different text"
-msgstr "Щракнете и редактирайте всеки елемент по-долу, за да видите как изглежда компонентът с различен текст"
-
-
-#: flaskshop/templates/public/style_guide.html:630
-msgid "This is Success alert"
-msgstr "Това е сигнал за успех"
-
-#: flaskshop/templates/public/style_guide.html:634
-msgid "This is Danger alert"
-msgstr "Това е предупреждение за опасност"
-
-#: flaskshop/templates/public/style_guide.html:638
-msgid "This is Warning alert. Notifications content is not limited with container width. Place here as many information as you want or need to"
-msgstr "Това е Предупреждение. Съдържанието на известия не е ограничено с ширината на контейнера. Поставете тук толкова информация, колкото искате или трябва"
-
-#: flaskshop/templates/public/style_guide.html:662
-msgid "Tabs navigation"
-msgstr "Навигация на табове"
-
-#: flaskshop/templates/public/style_guide.html:740
-msgid "Payment pending"
-msgstr "Чака плащане"
-
-#: flaskshop/templates/public/style_guide.html:761
-msgid "Fully paid"
-msgstr "Платено"
-
-#: flaskshop/templates/public/style_guide.html:782
-msgid "Mr. Walter C. Brown"
-msgstr "Г-н Тест Ф. Браун"
-
-#: flaskshop/templates/public/style_guide.html:783
-msgid "49 Featherstone Street"
-msgstr "ул. Тест № 48"
-
-#: flaskshop/templates/public/style_guide.html:784
-msgid "London, EC1Y 8SY"
-msgstr "Гр. Варна, 9000"
-
-#: flaskshop/templates/public/style_guide.html:786
-msgid "United Kingdom"
-msgstr "България"
-
-#: flaskshop/templates/public/style_guide.html:825
-#: flaskshop/templates/public/style_guide.html:836
-msgid "Johnson-Brown"
-msgstr "Тест-Браун"
-
-#: flaskshop/templates/public/style_guide.html:843
-msgid "FROM"
-msgstr "ОТ"
 
 #: plugin_example/conversations/forms.py:14
 msgid "Recipient"
