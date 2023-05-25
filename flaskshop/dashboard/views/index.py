@@ -30,14 +30,14 @@ def index():
         .order_by(func.count(OrderLine.product_id).desc())
         .all()
     )
-    top5_products = []
-    for product_id, order_count in hot_product_ids[:5]:
+    top_products = []
+    for product_id, order_count in hot_product_ids[:4]:
         p = Product.get_by_id(product_id)
         # product may deleted
         if not p:
             continue
         p.order_count = order_count
-        top5_products.append(p)
+        top_products.append(p)
 
     activity = OrderEvent.query.order_by(OrderEvent.id.desc()).limit(10)
 
@@ -49,7 +49,7 @@ def index():
         "order_unfulfill": get_order_status(OrderStatusKinds.unfulfilled.value),
         "order_fulfill": get_order_status(OrderStatusKinds.fulfilled.value),
         "onsale_products_count": onsale_products_count,
-        "top_products": top5_products,
+        "top_products": top_products,
         "activity": activity,
         "order_events": OrderEvents,
     }
