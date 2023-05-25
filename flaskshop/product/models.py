@@ -248,7 +248,9 @@ class Category(Model):
         attr_filter = set()
         for product in self.products:
             for attr in product.product_type.product_attributes:
-                attr_filter.add(attr)
+                if Product.query.filter(Product.attributes.__getitem__(str(attr.id))).count() > 0:
+                    # TODO: Remove unused values from each attribute
+                    attr_filter.add(attr)
         return attr_filter
 
     @classmethod
