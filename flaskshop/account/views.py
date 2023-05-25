@@ -27,7 +27,7 @@ def login():
     if form.validate_on_submit():
         login_user(form.user)
         redirect_url = request.args.get("next") or url_for("public.home")
-        flash(lazy_gettext("You are log in."), "success")
+        flash(lazy_gettext("You are logged in!"), "success")
         return redirect(redirect_url)
     else:
         flash_errors(form)

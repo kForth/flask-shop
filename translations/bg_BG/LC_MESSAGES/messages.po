@@ -99,7 +99,7 @@ msgid "Contact Phone"
 msgstr "Телефон за контакт"
 
 #: flaskshop/account/views.py:28
-msgid "You are log in."
+msgid "You are logged in!"
 msgstr "Успешно влизане."
 
 #: flaskshop/account/views.py:39
