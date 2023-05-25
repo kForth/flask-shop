@@ -4,48 +4,56 @@
   <div class="home">
     <div class="row">
       <div class="col-sm-6 col-md-3 home__block2">
-        <div class="home--square">
+        <div class="home--square rounded">
           <div class="home--content">
             <div class="home--content-wrapper">
               <div class="home--content-inner">
                 <h1>{% trans %}Nozzles{% endtrans %}</h1>
-                <a class="btn btn-secondary home__button" href="#">{% trans %}Shop Now{% endtrans %}</a>
+                <a class="btn btn-secondary home__button" href="{{ url_for('product.show_category', name='nozzles') }}">
+                  {% trans %}Shop Now{% endtrans %}
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 home__block3">
-        <div class="home--square">
+        <div class="home--square rounded">
           <div class="home--content">
             <div class="home--content-wrapper">
               <div class="home--content-inner">
                 <h1>{% trans %}Heater Blocks{% endtrans %}</h1>
-                <a class="btn btn-secondary home__button" href="#">{% trans %}Shop Now{% endtrans %}</a>
+                <a class="btn btn-secondary home__button" href="{{ url_for('product.show_category', name='heater-blocks') }}">
+                  {% trans %}Shop Now{% endtrans %}
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 home__block3">
-        <div class="home--square">
+        <div class="home--square rounded">
           <div class="home--content">
             <div class="home--content-wrapper">
               <div class="home--content-inner">
                 <h1>{% trans %}Heat Breaks{% endtrans %}</h1>
-                <a class="btn btn-secondary home__button" href="#">{% trans %}Shop Now{% endtrans %}</a>
+                <a class="btn btn-secondary home__button" href="{{ url_for('product.show_category', name='heat-breaks') }}">
+                  {% trans %}Shop Now{% endtrans %}
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-md-3 home__block3">
-        <div class="home--square">
+        <div class="home--square rounded">
           <div class="home--content">
             <div class="home--content-wrapper">
               <div class="home--content-inner">
                 <h1>{% trans %}Upgrade Kits{% endtrans %}</h1>
-                <a class="btn btn-secondary home__button" href="#">{% trans %}Shop Now{% endtrans %}</a>
+                <a class="btn btn-secondary home__button" href="{{ url_for('product.show_category', name='upgrade-kits') }}">
+                  {% trans %}Shop Now{% endtrans %}
+                </a>
               </div>
             </div>
           </div>
