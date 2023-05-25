@@ -77,7 +77,8 @@ def jinja_global_varibles(app):
             obj = Setting.query.filter_by(key=key).first()
             if not obj:
                 obj = Setting.create(key=key, **value)
-            settings[key] = obj
+            settings[key] = obj.value
+
         return dict(settings=settings)
 
     def get_sort_by_url(field, descending=False):
