@@ -167,7 +167,7 @@ class Product(Model):
 
     @staticmethod
     def clear_category_cache(target):
-        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.category_name, "*"))
+        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.id, "*"))
         for key in keys:
             rdb.delete(key)
 

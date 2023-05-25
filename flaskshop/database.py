@@ -97,12 +97,12 @@ class CRUDMixin:
     @classmethod
     def __flush_after_update_event__(cls, target):
         rdb.delete(MC_KEY_GET_BY_ID.format(cls.__name__, target.id))
-        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.name))
+        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.id))
 
     @classmethod
     def __flush_delete_event__(cls, target):
         rdb.delete(MC_KEY_GET_BY_ID.format(cls.__name__, target.id))
-        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.name))
+        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.id))
 
 
 class Model(CRUDMixin, db.Model):
