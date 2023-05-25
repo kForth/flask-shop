@@ -6,6 +6,7 @@ from .extensions import db
 
 Column = db.Column
 MC_KEY_GET_BY_ID = "global:{}:{}"
+MC_KEY_GET_BY_NAME = "global:{}:{}"
 
 
 class CRUDMixin:
@@ -36,16 +37,16 @@ class CRUDMixin:
         return commit and db.session.commit()
 
     @classmethod
-    @cache(MC_KEY_GET_BY_ID.format("{cls.__name__}", "{record_id}"))
-    def get_by_id(cls, record_id):
+    @cache(MC_KEY_GET_BY_ID.format("{cls.__name__}", "{record_name}"))
+    def get_by_id(cls, record_name):
         """Get record by ID."""
         if any(
             (
-                isinstance(record_id, (str, bytes)) and record_id.isdigit(),
-                isinstance(record_id, (int, float)),
+                isinstance(record_name, (str, bytes)) and record_name.isdigit(),
+                isinstance(record_name, (int, float)),
             )
         ):
-            return cls.query.get(int(record_id))
+            return cls.query.get(int(record_name))
         return None
 
     @classmethod
@@ -96,10 +97,12 @@ class CRUDMixin:
     @classmethod
     def __flush_after_update_event__(cls, target):
         rdb.delete(MC_KEY_GET_BY_ID.format(cls.__name__, target.id))
+        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.name))
 
     @classmethod
     def __flush_delete_event__(cls, target):
         rdb.delete(MC_KEY_GET_BY_ID.format(cls.__name__, target.id))
+        rdb.delete(MC_KEY_GET_BY_NAME.format(cls.__name__, target.name))
 
 
 class Model(CRUDMixin, db.Model):

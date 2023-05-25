@@ -6,7 +6,7 @@ from sqlalchemy.ext.mutable import MutableDict
 
 from flaskshop.corelib.db import PropsItem
 from flaskshop.corelib.mc import cache, cache_by_args, rdb
-from flaskshop.database import Column, Model, db
+from flaskshop.database import Column, Model, db, MC_KEY_GET_BY_NAME
 from flaskshop.settings import Config
 
 MC_KEY_FEATURED_PRODUCTS = "product:featured:{}"
@@ -167,7 +167,7 @@ class Product(Model):
 
     @staticmethod
     def clear_category_cache(target):
-        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.category_id, "*"))
+        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.category_name, "*"))
         for key in keys:
             rdb.delete(key)
 
@@ -212,15 +212,18 @@ class Product(Model):
 
 class Category(Model):
     __tablename__ = "product_category"
+    name = Column(db.String(255), nullable=False)
     title = Column(db.String(255), nullable=False)
     parent_id = Column(db.Integer(), default=0)
     background_img = Column(db.String(255))
+
+    # TODO: Name should be unique
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        return url_for("product.show_category", id=self.id)
+        return url_for("product.show_category", name=self.name)
 
     @property
     def background_img_url(self):
@@ -249,9 +252,15 @@ class Category(Model):
         return attr_filter
 
     @classmethod
-    @cache_by_args(MC_KEY_CATEGORY_PRODUCTS.format("{category_id}", "{page}"))
-    def get_product_by_category(cls, category_id, page):
-        category = Category.get_by_id(category_id)
+    @cache(MC_KEY_GET_BY_NAME.format("{cls.__name__}", "{record_name}"))
+    def get_by_name(cls, record_name):
+        """Get category by name."""
+        return Category.query.filter(Category.name == record_name).first()
+
+    @classmethod
+    @cache_by_args(MC_KEY_CATEGORY_PRODUCTS.format("{category_name}", "{page}"))
+    def get_product_by_category(cls, category_name, page):
+        category = Category.get_by_name(category_name)
         all_category_ids = [child.id for child in category.children] + [category.id]
         query = Product.query.filter(Product.category_id.in_(all_category_ids))
         ctx, query = get_product_list_context(query, category)
@@ -282,7 +291,7 @@ class Category(Model):
     @staticmethod
     def clear_mc(target):
         rdb.delete(MC_KEY_CATEGORY_CHILDREN.format(target.id))
-        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.id, "*"))
+        keys = rdb.keys(MC_KEY_CATEGORY_PRODUCTS.format(target.name, "*"))
         for key in keys:
             rdb.delete(key)
 

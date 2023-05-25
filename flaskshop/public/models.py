@@ -4,6 +4,7 @@ from flaskshop.corelib.db import PropsItem
 from flaskshop.corelib.mc import cache, rdb
 from flaskshop.database import Column, Model, db
 from flaskshop.settings import Config
+from flaskshop.product.models import Category
 
 MC_KEY_MENU_ITEMS = "public:site:{}:{}"
 MC_KEY_MENU_ITEM_CHILDREN = "public:menuitem:{}:children"
@@ -40,7 +41,8 @@ class MenuItem(Model):
         if self.page_id:
             return Page.get_by_id(self.page_id).url
         elif self.category_id:
-            return url_for("product.show_category", id=self.category_id)
+            category_name = Category.query.get(self.category_id).name
+            return url_for("product.show_category", name=category_name)
         elif self.collection_id:
             return url_for("product.show_collection", id=self.collection_id)
 

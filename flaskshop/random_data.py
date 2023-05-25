@@ -487,7 +487,7 @@ def create_menus():
 def generate_menu_items(category: Category, menu_id=None, parent_id=None):
     menu_item, created = MenuItem.get_or_create(
         title=category.title,
-        category_id=category.id,
+        category_id=category.name,
         position=menu_id,
         parent_id=parent_id,
     )
