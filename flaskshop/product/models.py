@@ -126,7 +126,17 @@ class Product(Model):
         db.session.commit()
 
     def update_attributes(self, attr_values):
-        attr_entries = [str(item.id) for item in self.product_type.product_attributes]
+        attrs: list[ProductAttribute] = [item for item in self.product_type.product_attributes]
+        
+        # Create any new atrribute choices
+        for attr, val in zip(attrs, attr_values):
+            if val not in [e.title for e in attr.values]:
+                attr_choice = AttributeChoiceValue()
+                attr_choice.title = val
+                attr_choice.attribute_id = attr.id
+                attr_choice.save()
+                
+        attr_entries = [str(item.id) for item in attrs]
         attributes = dict(zip(attr_entries, attr_values))
         self.attributes = attributes
 

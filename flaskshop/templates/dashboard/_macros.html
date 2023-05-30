@@ -31,13 +31,13 @@
     </div>
 {% endmacro %}
 
-{% macro render_attribute_field(field, attributes) %}
+{% macro render_attribute_field(field, attributes, oncreate=false) %}
     <div class="form-group">
         <label>{{ field.label.text }}</label>
         <p>
             {% for attr in attributes %}
                 <label>{{ attr.title }}</label>
-                <select class="form-control" name="attributes-{{ loop.index }}">
+                <select class="form-control" name="attributes-{{ loop.index }}" data-ts-create="{{ oncreate }}">
                     <option value="0">None</option>
                     {% for item in attr.values %}
                         {% set attr_id = attr.id|string %}

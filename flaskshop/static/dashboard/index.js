@@ -71,7 +71,9 @@ deleteModal.addEventListener('show.bs.modal', event => {
 
 // 所有的select使用tom-select组件
 document.querySelectorAll('select').forEach((el) => {
-    new TomSelect(el, {});
+    new TomSelect(el, {
+        create: !!el.getAttribute("data-ts-create")
+    });
 });
 
 // flashed_messages在页面加载时自动展示
