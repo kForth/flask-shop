@@ -95,7 +95,7 @@
                         <div class="navbar__brand__cart float-right">
                             <a rel="nofollow" class="cart__icon" href="{{ url_for('checkout.cart_index') }}">
                                 <span class="cart-label d-none d-md-inline-block">
-                                {% trans %}Your Cart{% endtrans %}
+                                {% trans %}Cart{% endtrans %}
                                 </span>
                                 <div class="navbar__brand__cart__icon">
                                     <svg data-src="{{ url_for('static', filename='img/cart.svg') }}" width="24"
@@ -157,7 +157,7 @@
                                 <hr/>
                             <li>
                                 <a rel="nofollow" href="{{ url_for('checkout.cart_index') }}">
-                                    {% trans %}Your Cart{% endtrans %}
+                                    {% trans %}Shopping Cart{% endtrans %}
                                 </a>
                             </li>
                             {% if current_user.is_authenticated %}
@@ -170,7 +170,7 @@
                                 {% endif %}
                                 <li>
                                     <a href="{{ url_for('account.index') }}">
-                                        {% trans %}Your account{% endtrans %}
+                                        {% trans %}Your Account{% endtrans %}
                                     </a>
                                 </li>
 

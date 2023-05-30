@@ -732,7 +732,11 @@ msgid "Log in"
 msgstr "Вход"
 
 #: flaskshop/templates/base.html:105 flaskshop/templates/base.html:170
-msgid "Your Cart"
+msgid "Cart"
+msgstr "Вашата кошница"
+
+#: flaskshop/templates/base.html:105 flaskshop/templates/base.html:170
+msgid "Shopping Cart"
 msgstr "Вашата кошница"
 
 #: flaskshop/templates/base.html:164
@@ -742,7 +746,7 @@ msgstr "Профил"
 
 #: flaskshop/templates/account/details.html:12
 #: flaskshop/templates/base.html:183 flaskshop/templates/orders/details.html:17
-msgid "Your account"
+msgid "Your Account"
 msgstr "Вашия профил"
 
 #: flaskshop/templates/base.html:189
@@ -860,7 +864,7 @@ msgid "Shipment calculated at checkout"
 msgstr "Пратката се изчислява при плащане"
 
 #: flaskshop/templates/checkout/cart.html:3
-msgid "Your cart"
+msgid "Shopping Cart"
 msgstr "Вашата кошница"
 
 #: flaskshop/templates/checkout/cart.html:8
