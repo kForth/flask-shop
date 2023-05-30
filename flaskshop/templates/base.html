@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-    <title>{{ settings['project_title'].value }}</title>
+    <title>{% block title %}{{ settings['project_title'].value }}{% endblock %}</title>
     {% block meta %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
