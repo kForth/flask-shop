@@ -164,8 +164,8 @@ def seed(type):
         #     placeholder_dir=place_holder, how_many=10, create_images=True
         # )
         create_generator = chain(
-            # create_collections_by_schema(place_holder),
-            # create_users(),
+            create_collections_by_schema(place_holder),
+            create_users(),
             create_roles(),
             create_admin(),
             create_page(),
