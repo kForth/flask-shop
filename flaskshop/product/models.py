@@ -222,12 +222,10 @@ class Product(Model):
 
 class Category(Model):
     __tablename__ = "product_category"
-    name = Column(db.String(255), nullable=False)
+    name = Column(db.String(255), unique=True, nullable=False)
     title = Column(db.String(255), nullable=False)
     parent_id = Column(db.Integer(), default=0)
     background_img = Column(db.String(255))
-
-    # TODO: Name should be unique
 
     def __str__(self):
         return self.title
