@@ -141,6 +141,7 @@ class CollectionForm(FlaskForm):
 
 
 class CategoryForm(FlaskForm):
+    name = StringField(lazy_gettext("Name"), validators=[DataRequired()])
     title = StringField(lazy_gettext("Title"), validators=[DataRequired()])
     parent_id = SelectField(lazy_gettext("Parent"), coerce=int, default=0)
     background_img = StringField(lazy_gettext("Current Image"))

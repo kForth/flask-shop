@@ -17,6 +17,7 @@
                     <form method="POST" action="" enctype="multipart/form-data">
                         <div class="card-body">
                             {{ form.hidden_tag() }}
+                            {{ render_field(form.name) }}
                             {{ render_field(form.title) }}
                             {{ render_field(form.parent_id) }}
                             {{ macros.render_img(form.background_img) }}
