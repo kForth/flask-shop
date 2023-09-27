@@ -9,35 +9,35 @@ This project is a front page copy of [saleor](https://github.com/mirumee/saleor)
 <table align="center">
     <tr>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/1.png">
-                <img src="ScreenShot/1.png" alt="Screenshot Home" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/1.png">
+                <img src="docs/ScreenShot/1.png" alt="Screenshot Home" width="300px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/2.png">
-                <img src="ScreenShot/2.png" alt="Screenshot Category" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/2.png">
+                <img src="docs/ScreenShot/2.png" alt="Screenshot Category" width="300px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/3.png">
-                <img src="ScreenShot/3.png" alt="Screenshot Cart" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/3.png">
+                <img src="docs/ScreenShot/3.png" alt="Screenshot Cart" width="300px" />
             </a>
         </td>
     </tr>
     <tr>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/4.png">
-                <img src="ScreenShot/4.png" alt="Screenshot Admin Panel" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/4.png">
+                <img src="docs/ScreenShot/4.png" alt="Screenshot Admin Panel" width="300px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/5.png">
-                <img src="ScreenShot/5.png" alt="Screenshot Site Configuration" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/5.png">
+                <img src="docs/ScreenShot/5.png" alt="Screenshot Site Configuration" width="300px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/hjlarry/flask-shop/master/ScreenShot/6.png">
-                <img src="ScreenShot/6.png" alt="Screenshot Order List" width="300px" />
+            <a href="https://raw.githubusercontent.com/kforth/flask-shop/master/docs/ScreenShot/6.png">
+                <img src="docs/ScreenShot/6.png" alt="Screenshot Order List" width="300px" />
             </a>
         </td>
     </tr>
